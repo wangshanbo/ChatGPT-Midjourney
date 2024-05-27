@@ -413,7 +413,7 @@ export function Settings() {
       </div>
       <div className={styles["settings"]}>
         <List>
-          <ListItem title={Locale.Settings.Avatar}>
+          {/* <ListItem title={Locale.Settings.Avatar}>
             <Popover
               onClose={() => setShowEmojiPicker(false)}
               content={
@@ -433,9 +433,9 @@ export function Settings() {
                 <Avatar avatar={config.avatar} />
               </div>
             </Popover>
-          </ListItem>
+          </ListItem> */}
 
-          <ListItem
+          {/* <ListItem
             title={Locale.Settings.Update.Version(currentVersion ?? "unknown")}
             subTitle={
               checkingUpdate
@@ -458,7 +458,7 @@ export function Settings() {
                 onClick={() => checkUpdate(true)}
               />
             )}
-          </ListItem>
+          </ListItem> */}
 
           <ListItem title={Locale.Settings.SendKey}>
             <Select
@@ -597,7 +597,7 @@ export function Settings() {
           </ListItem>
         </List>
 
-        <List>
+        {/* <List>
           <ListItem
             title={`Midjourney ${Locale.Midjourney.ImageAgent}`}
             subTitle={Locale.Midjourney.ImageAgentOpenTip}
@@ -613,7 +613,7 @@ export function Settings() {
               }
             ></input>
           </ListItem>
-        </List>
+        </List> */}
 
         <List>
           <ListItem
@@ -668,7 +668,7 @@ export function Settings() {
 
           {!accessStore.hideUserApiKey ? (
             <>
-              <ListItem
+              {/* <ListItem
                 title={Locale.Settings.Endpoint.Title}
                 subTitle={Locale.Settings.Endpoint.SubTitle}
               >
@@ -680,7 +680,7 @@ export function Settings() {
                     accessStore.updateOpenAiUrl(e.currentTarget.value)
                   }
                 ></input>
-              </ListItem>
+              </ListItem> */}
               <ListItem
                 title={Locale.Settings.Token.Title}
                 subTitle={Locale.Settings.Token.SubTitle}
@@ -697,7 +697,7 @@ export function Settings() {
             </>
           ) : null}
 
-          {!accessStore.hideBalanceQuery ? (
+          {/* {!accessStore.hideBalanceQuery ? (
             <ListItem
               title={Locale.Settings.Usage.Title}
               subTitle={
@@ -721,7 +721,7 @@ export function Settings() {
                 />
               )}
             </ListItem>
-          ) : null}
+          ) : null} */}
 
           <ListItem
             title={Locale.Settings.CustomModel.Title}

@@ -65,6 +65,14 @@ Current time: {{time}}`;
 
 export const DEFAULT_MODELS = [
   {
+    name: "gpt-4o-2024-05-13",
+    available: true,
+  },
+  {
+    name: "gpt-4o",
+    available: true,
+  },
+  {
     name: "gpt-4",
     available: true,
   },
@@ -92,10 +100,10 @@ export const DEFAULT_MODELS = [
     name: "gpt-3.5-turbo-1106",
     available: true,
   },
-  {
-    name: "midjourney",
-    available: true,
-  },
+  // {
+  //   name: "midjourney",
+  //   available: true,
+  // },
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;
