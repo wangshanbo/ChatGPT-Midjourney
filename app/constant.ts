@@ -81,11 +81,11 @@ export const DEFAULT_MODELS = [
     available: true,
   },
   {
-    name: "gpt-3.5-turbo",
+    name: "gpt-3.5-turbo-ca",
     available: true,
   },
   {
-    name: "gpt-3.5-turbo-ca",
+    name: "gpt-3.5-turbo",
     available: true,
   },
   // {

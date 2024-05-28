@@ -24,11 +24,13 @@ export function ModelConfigList(props: {
             );
           }}
         >
-          {config.allModels().map((v, i) => (
-            <option value={v.name} key={i} disabled={!v.available}>
-              {v.name}
-            </option>
-          ))}
+          {config.allModels().map((v, i) => 
+            v.available ? (
+              <option value={v.name} key={i}>
+                {v.name}
+              </option>
+            ) : null
+          )}
         </Select>
       </ListItem>
       <ListItem
