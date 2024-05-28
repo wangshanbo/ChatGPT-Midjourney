@@ -543,7 +543,7 @@ export function ChatActions(props: {
                 icon={<RobotIcon/>}
             />
 
-            <ChatAction
+            {/* <ChatAction
                 onClick={selectImage}
                 text="选择图片"
                 icon={<UploadIcon/>}
@@ -556,7 +556,7 @@ export function ChatActions(props: {
                         onChange={onImageSelected}
                     />
                 }
-            />
+            /> */}
 
             {showModelSelector && (
                 <Selector
@@ -754,7 +754,7 @@ function _Chat() {
                 botMsg: extAttr?.botMsg,
             });
             if (res !== false) {
-                localStorage.setItem(LAST_INPUT_KEY, userInput);
+                localStorage.setItem(LAST_INPUT_KEY, userInput); 
                 setUserInput("");
                 setUseImages([]);
                 setMjImageMode("BLEND");
@@ -1350,7 +1350,7 @@ function _Chat() {
                         setUseImages([...useImages, img]);
                     }}
                 />
-                {useImages.length > 0 && (
+                {/* {useImages.length > 0 && (
                     <div className={styles["chat-select-images"]}>
                         {useImages.map((img: any, i) => (
                             <img
@@ -1387,7 +1387,7 @@ function _Chat() {
                             <small>{Locale.Midjourney.HasImgTip}</small>
                         </div>
                     </div>
-                )}
+                )} */}
                 <div className={styles["chat-input-panel-inner"]}>
           <textarea
               ref={inputRef}

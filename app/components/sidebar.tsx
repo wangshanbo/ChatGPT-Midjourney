@@ -118,14 +118,15 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          ChatGPT-Midjourney
+          一个你自己的AI助手
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          Your own AI assistant.
+          {/* Your own AI assistant. */}
+          接入最新的ChatGPT接口
         </div>
-        <div className={styles["sidebar-logo"] + " no-dark"}>
+        {/* <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
-        </div>
+        </div> */}
       </div>
 
       <div className={styles["sidebar-header-bar"]}>
